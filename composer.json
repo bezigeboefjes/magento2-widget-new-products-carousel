@@ -10,6 +10,6 @@
         "AFL-3.0"
     ],
     "autoload": {
-        "files": [ "registration.php" ],
+        "files": [ "registration.php" ]
     }
 }
