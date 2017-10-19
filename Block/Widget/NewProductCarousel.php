@@ -3,12 +3,12 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Magento\Catalog\Block\Product\Widget;
+namespace BezigeBoefjes\NewProductCarouselWidget\Block\Widget;
 
 /**
  * New products widget
  */
-class NewProductCarouselWidget extends \Magento\Catalog\Block\Product\NewProduct implements \Magento\Widget\Block\BlockInterface
+class NewProductCarousel extends \Magento\Catalog\Block\Product\NewProduct implements \Magento\Widget\Block\BlockInterface
 {
     /**
      * Display products type - all products
