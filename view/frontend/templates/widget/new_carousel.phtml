@@ -25,12 +25,14 @@ if ($exist = ($block->getProductCollection() && $block->getProductCollection()->
     $showWishlist = true;
     $showCompare = true;
     $showCart = true;
+    $showProductsPerPage = $block->getData('products_per_page');
     $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
     $description = false;
 }
 ?>
 
 <?php if ($exist):?>
+
     <div class="block widget block-new-products <?= /* @escapeNotVerified */ $mode ?>">
         <div class="block-title">
             <strong role="heading" aria-level="2"><?= /* @escapeNotVerified */ $title ?></strong>
@@ -133,9 +135,9 @@ require([
 	], function($) {
 		$(document).ready(function() {
 			$(".owlslider").owlCarousel({
-				navigation : true, // Show next and prev buttons
+				navigation : false, // Show next and prev buttons
 				autoPlay: false, //Set AutoPlay to 3 seconds
-				items : 4
+				items : <?= $showProductsPerPage ?>
 			});
 		});
 	});
