@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace BezigeBoefjes\NewProductCarouselWidget\Block\Widget;
+namespace BezigeBoefjes\NewProductCarousel\Block\Widget;
 
 /**
  * New products widget

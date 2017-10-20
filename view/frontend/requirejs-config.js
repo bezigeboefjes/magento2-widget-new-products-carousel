@@ -1,6 +1,6 @@
 var config = {
     paths: {
-        owlcarousel: 'BezigeBoefjes_NewProductCarouselWidget/js/owl.carousel.min'
+        owlcarousel: 'BezigeBoefjes_NewProductCarousel/js/owl.carousel.min'
     },
     "shim": {
         owlcarousel: {
