@@ -22,9 +22,9 @@ if ($exist = ($block->getProductCollection() && $block->getProductCollection()->
     $title = __('New Products');
     $items = $block->getProductCollection()->getItems();
 
-    $showWishlist = true;
-    $showCompare = true;
-    $showCart = true;
+    $showWishlist = false;
+    $showCompare = false;
+    $showCart = false;
     $showProductsPerPage = $block->getData('products_per_page');
     $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
     $description = false;
