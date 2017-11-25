@@ -17,15 +17,23 @@
                     </option>
                 </options>
             </parameter>
-            <parameter name="show_pager" xsi:type="select" visible="true"
+            <parameter name="show_navigation" xsi:type="select" visible="true"
                        source_model="Magento\Config\Model\Config\Source\Yesno">
-                <label translate="true">Display Page Control</label>
+                <label translate="true">Display Next / Prev buttons</label>
+            </parameter>
+            <parameter name="enable_autoplay" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Autoplay</label>
+            </parameter>
+            <parameter name="autoplay_seconds" xsi:type="text" required="true" visible="true">
+                <label translate="true">Seconds of autoplay</label>
+                <depends>
+                    <parameter name="enable_autoplay" value="1" />
+                </depends>
+                <value>3</value>
             </parameter>
             <parameter name="products_per_page" xsi:type="text" required="true" visible="true">
                 <label translate="true">Number of Products per Page</label>
-                <depends>
-                    <parameter name="show_pager" value="1" />
-                </depends>
                 <value>5</value>
             </parameter>
             <parameter name="products_count" xsi:type="text" required="true" visible="true">
