@@ -47,7 +47,7 @@ if ($exist = ($block->getProductCollection() && $block->getProductCollection()->
             <ol class="product-items <?= /* @escapeNotVerified */ $type ?> owlslider">
                 <?php $iterator = 1; ?>
                 <?php foreach ($items as $_item): ?>
-                    <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item" style="width: 240px">' : '</li><li class="item product product-item" style="width: 240px">' ?>
+                    <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item" style="margin-left: 10px; margin-top: 10px; margin-right: 10px; width: 240px">' : '</li><li class="item product product-item" style="margin-left: 10px; margin-top: 10px; margin-right: 10px; width: 240px">' ?>
                     <div class="product-item-info">
                         <a href="<?= /* @escapeNotVerified */ $block->getProductUrl($_item) ?>" class="product photo product-item-photo">
                             <?= $block->getImage($_item, $image)->toHtml() ?>
